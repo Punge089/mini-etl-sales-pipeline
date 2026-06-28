@@ -111,6 +111,6 @@ After running the project, the pipeline will generate:
 - Data visualization
 - GitHub project organization
 
-## Resume Summary
+## Summary
 
 Built a Python ETL pipeline to extract, clean, transform, and load sales data into a local SQL database. Used Pandas and SQL to generate business reports, including monthly revenue and top product performance.
