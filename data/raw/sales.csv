@@ -1,0 +1,22 @@
+order_id,order_date,customer_id,product,category,quantity,unit_price,region
+1001,2026-01-03,C001,Keyboard,Accessories,2,850,Bangkok
+1002,2026-01-04,C002,Mouse,Accessories,3,450,Chiang Mai
+1003,2026-01-07,C003,Monitor,Electronics,1,5200,Bangkok
+1004,2026-01-10,C004,Laptop,Electronics,1,28500,Phuket
+1005,2026-01-11,C005,USB-C Cable,Accessories,5,190,Khon Kaen
+1006,2026-01-12,C006,Keyboard,Accessories,1,850,Bangkok
+1007,2026-02-01,C007,Mouse,Accessories,2,450,Bangkok
+1008,2026-02-02,C008,Monitor,Electronics,2,5200,Chiang Mai
+1009,2026-02-05,C009,Laptop,Electronics,1,30500,Bangkok
+1010,2026-02-08,C010,Webcam,Electronics,2,1250,Phuket
+1011,2026-02-12,C011,USB-C Cable,Accessories,,190,Bangkok
+1012,2026-02-15,C012,Keyboard,Accessories,4,850,
+1013,2026-03-01,C013,Monitor,Electronics,1,5200,Khon Kaen
+1014,2026-03-04,C014,Laptop,Electronics,1,29500,Bangkok
+1015,2026-03-06,C015,Mouse,Accessories,6,450,Chiang Mai
+1016,2026-03-09,C016,Webcam,Electronics,1,1250,Bangkok
+1017,2026-03-12,C017,USB-C Cable,Accessories,10,190,Phuket
+1017,2026-03-12,C017,USB-C Cable,Accessories,10,190,Phuket
+1018,invalid-date,C018,Keyboard,Accessories,2,850,Bangkok
+1019,2026-03-20,C019,,Accessories,1,300,Bangkok
+1020,2026-03-23,C020,Laptop,Electronics,1,,Chiang Mai

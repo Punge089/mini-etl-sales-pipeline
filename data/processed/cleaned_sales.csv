@@ -1,0 +1,19 @@
+order_id,order_date,customer_id,product,category,quantity,unit_price,region,revenue,order_month
+1001,2026-01-03,C001,Keyboard,Accessories,2.0,850.0,Bangkok,1700.0,2026-01
+1002,2026-01-04,C002,Mouse,Accessories,3.0,450.0,Chiang Mai,1350.0,2026-01
+1003,2026-01-07,C003,Monitor,Electronics,1.0,5200.0,Bangkok,5200.0,2026-01
+1004,2026-01-10,C004,Laptop,Electronics,1.0,28500.0,Phuket,28500.0,2026-01
+1005,2026-01-11,C005,USB-C Cable,Accessories,5.0,190.0,Khon Kaen,950.0,2026-01
+1006,2026-01-12,C006,Keyboard,Accessories,1.0,850.0,Bangkok,850.0,2026-01
+1007,2026-02-01,C007,Mouse,Accessories,2.0,450.0,Bangkok,900.0,2026-02
+1008,2026-02-02,C008,Monitor,Electronics,2.0,5200.0,Chiang Mai,10400.0,2026-02
+1009,2026-02-05,C009,Laptop,Electronics,1.0,30500.0,Bangkok,30500.0,2026-02
+1010,2026-02-08,C010,Webcam,Electronics,2.0,1250.0,Phuket,2500.0,2026-02
+1011,2026-02-12,C011,USB-C Cable,Accessories,1.0,190.0,Bangkok,190.0,2026-02
+1012,2026-02-15,C012,Keyboard,Accessories,4.0,850.0,Unknown,3400.0,2026-02
+1013,2026-03-01,C013,Monitor,Electronics,1.0,5200.0,Khon Kaen,5200.0,2026-03
+1014,2026-03-04,C014,Laptop,Electronics,1.0,29500.0,Bangkok,29500.0,2026-03
+1015,2026-03-06,C015,Mouse,Accessories,6.0,450.0,Chiang Mai,2700.0,2026-03
+1016,2026-03-09,C016,Webcam,Electronics,1.0,1250.0,Bangkok,1250.0,2026-03
+1017,2026-03-12,C017,USB-C Cable,Accessories,10.0,190.0,Phuket,1900.0,2026-03
+1019,2026-03-20,C019,Unknown Product,Accessories,1.0,300.0,Bangkok,300.0,2026-03
