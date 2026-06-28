@@ -1,6 +1,6 @@
 # Mini ETL Sales Pipeline
 
-A beginner-friendly Data Engineering portfolio project that demonstrates an end-to-end ETL workflow using Python, Pandas, SQL, and SQLite.
+A simple project that demonstrates an end-to-end ETL workflow using Python, Pandas, SQL, and SQLite.
 
 ## Project Overview
 
