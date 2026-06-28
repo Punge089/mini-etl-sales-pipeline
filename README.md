@@ -12,16 +12,6 @@ This project simulates a small sales data pipeline:
 4. **Query** the database using SQL
 5. **Report** sales insights through Markdown reports and charts
 
-This project is designed for internship applications, especially for Data Engineering or Software Engineering roles.
-
-## Tech Stack
-
-- Python
-- Pandas
-- SQLite
-- SQL
-- Matplotlib
-
 ## Project Structure
 
 ```text
