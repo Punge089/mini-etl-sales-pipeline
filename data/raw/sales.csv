@@ -1,22 +1,121 @@
 order_id,order_date,customer_id,product,category,quantity,unit_price,region
-1001,2026-01-03,C001,Keyboard,Accessories,2,850,Bangkok
-1002,2026-01-04,C002,Mouse,Accessories,3,450,Chiang Mai
-1003,2026-01-07,C003,Monitor,Electronics,1,5200,Bangkok
-1004,2026-01-10,C004,Laptop,Electronics,1,28500,Phuket
-1005,2026-01-11,C005,USB-C Cable,Accessories,5,190,Khon Kaen
-1006,2026-01-12,C006,Keyboard,Accessories,1,850,Bangkok
-1007,2026-02-01,C007,Mouse,Accessories,2,450,Bangkok
-1008,2026-02-02,C008,Monitor,Electronics,2,5200,Chiang Mai
-1009,2026-02-05,C009,Laptop,Electronics,1,30500,Bangkok
-1010,2026-02-08,C010,Webcam,Electronics,2,1250,Phuket
-1011,2026-02-12,C011,USB-C Cable,Accessories,,190,Bangkok
-1012,2026-02-15,C012,Keyboard,Accessories,4,850,
-1013,2026-03-01,C013,Monitor,Electronics,1,5200,Khon Kaen
-1014,2026-03-04,C014,Laptop,Electronics,1,29500,Bangkok
-1015,2026-03-06,C015,Mouse,Accessories,6,450,Chiang Mai
-1016,2026-03-09,C016,Webcam,Electronics,1,1250,Bangkok
-1017,2026-03-12,C017,USB-C Cable,Accessories,10,190,Phuket
-1017,2026-03-12,C017,USB-C Cable,Accessories,10,190,Phuket
-1018,invalid-date,C018,Keyboard,Accessories,2,850,Bangkok
-1019,2026-03-20,C019,,Accessories,1,300,Bangkok
-1020,2026-03-23,C020,Laptop,Electronics,1,,Chiang Mai
+1001,2026-06-15,C008,Keyboard,Accessories,2,850,Chiang Mai
+1002,2026-02-07,C048,Mouse,Accessories,1,495,Bangkok
+1003,2026-01-10,C006,Laptop,Electronics,2,27075,Chonburi
+1004,2026-02-22,C046,Printer,Office,4,3900,Khon Kaen
+1005,2026-06-02,C018,Keyboard,Accessories,1,935,Phuket
+1006,2026-03-15,C010,Laptop,Electronics,3,27075,Bangkok
+1007,2026-04-10,C007,USB-C Cable,Accessories,3,199,Nakhon Ratchasima
+1008,2026-01-14,C047,SSD 1TB,Storage,1,3619,Bangkok
+1009,2026-05-24,C019,Printer,Office,3,3900,Rayong
+1010,2026-01-20,C003,Printer,Office,2,4095,Bangkok
+1011,2026-03-03,C007,Headset,Audio,2,1749,Rayong
+1012,2026-04-06,C011,USB-C Cable,Accessories,3,190,Rayong
+1013,2026-03-12,C045,Printer,Office,1,3900,Chonburi
+1014,2026-03-06,C011,SSD 1TB,Storage,4,3454,Rayong
+1015,2026-05-25,C015,Printer,Office,3,3705,Chiang Mai
+1016,2026-01-11,C052,USB-C Cable,Accessories,4,199,Bangkok
+1017,2026-02-26,C037,External HDD,Storage,3,2790,Rayong
+1018,2026-05-10,C026,Printer,Office,5,3900,Phuket
+1019,2026-02-07,C016,External HDD,Storage,2,3069,Chonburi
+1020,2026-04-15,C024,Laptop,Electronics,1,31350,Bangkok
+1021,2026-01-15,C008,Monitor,Electronics,1,5720,Chonburi
+1022,2026-01-19,C025,Headset,Audio,5,1669,Chonburi
+1023,2026-01-05,C044,External HDD,Storage,1,2929,Nakhon Ratchasima
+1024,2026-06-16,C022,Mouse,Accessories,2,495,Chiang Mai
+1025,2026-04-29,C001,External HDD,Storage,2,2790,Chonburi
+1026,2026-01-30,C041,Webcam,Electronics,2,1250,Phuket
+1027,2026-02-13,C035,RAM 16GB,Components,1,2614,Khon Kaen
+1028,2026-01-07,C008,USB-C Cable,Accessories,2,190,Bangkok
+1029,2026-03-05,C037,Mouse,Accessories,1,495,Nakhon Ratchasima
+1030,2026-01-20,C049,RAM 16GB,Components,1,2490,Rayong
+1031,2026-05-04,C036,Monitor,Electronics,2,5720,Chiang Mai
+1032,2026-05-21,C049,External HDD,Storage,2,2929,Khon Kaen
+1033,2026-06-23,C042,USB-C Cable,Accessories,5,209,Bangkok
+1034,2026-03-07,C015,Mouse,Accessories,3,427,Chonburi
+1035,2026-05-24,C015,Router,Networking,2,2080,Bangkok
+1036,2026-06-13,C004,Laptop,Electronics,1,27075,Nakhon Ratchasima
+1037,2026-03-28,C005,RAM 16GB,Components,2,2614,Rayong
+1038,2026-05-07,C014,RAM 16GB,Components,1,2739,Chiang Mai
+1039,2026-05-04,C052,Headset,Audio,2,1510,Bangkok
+1040,2026-06-20,C028,USB-C Cable,Accessories,4,209,Khon Kaen
+1041,2026-01-16,C044,Printer,Office,1,3705,Khon Kaen
+1042,2026-03-30,C052,Mouse,Accessories,2,450,Chiang Mai
+1043,2026-05-20,C029,Monitor,Electronics,4,5200,Phuket
+1044,2026-05-01,C016,Mouse,Accessories,5,427,Bangkok
+1045,2026-06-18,C035,Keyboard,Accessories,1,850,Chiang Mai
+1046,2026-04-17,C032,SSD 1TB,Storage,2,3619,Bangkok
+1047,2026-02-14,C025,Keyboard,Accessories,4,892,Nakhon Ratchasima
+1048,2026-04-29,C019,Headset,Audio,5,1590,Chiang Mai
+1049,2026-03-19,C014,Keyboard,Accessories,1,892,Bangkok
+1050,2026-01-15,C038,SSD 1TB,Storage,1,3125,Chonburi
+1051,2026-01-23,C055,Monitor,Electronics,1,4940,Rayong
+1052,2026-03-04,C026,Mouse,Accessories,2,427,Chonburi
+1053,2026-01-23,C027,Printer,Office,3,4095,Chiang Mai
+1054,2026-06-23,C046,USB-C Cable,Accessories,2,199,Khon Kaen
+1055,2026-02-05,C043,Printer,Office,2,4290,Phuket
+1056,2026-01-21,C001,SSD 1TB,Storage,1,3125,Chonburi
+1057,2026-02-26,C033,Webcam,Electronics,1,1312,Bangkok
+1058,2026-03-06,C024,Webcam,Electronics,1,1375,Nakhon Ratchasima
+1059,2026-05-22,C046,Webcam,Electronics,1,1312,Rayong
+1060,2026-01-29,C009,Webcam,Electronics,1,1187,Rayong
+1061,2026-05-24,C010,Webcam,Electronics,2,1250,Rayong
+1062,2026-03-31,C014,Printer,Office,2,4290,Phuket
+1063,2026-01-16,C006,Printer,Office,4,4095,Bangkok
+1064,2026-01-03,C022,Monitor,Electronics,2,5200,Rayong
+1065,2026-04-26,C036,External HDD,Storage,4,2650,Bangkok
+1066,2026-01-22,C045,Monitor,Electronics,1,5460,Chonburi
+1067,2026-05-24,C010,Headset,Audio,1,1510,Phuket
+1068,2026-04-06,C051,Keyboard,Accessories,3,850,Rayong
+1069,2026-03-07,C043,Mouse,Accessories,3,495,Chonburi
+1070,2026-02-11,C016,Monitor,Electronics,1,5720,Bangkok
+1071,2026-02-17,C048,USB-C Cable,Accessories,4,190,Phuket
+1072,2026-02-12,C051,External HDD,Storage,1,3069,Nakhon Ratchasima
+1073,2026-01-12,C055,SSD 1TB,Storage,2,3290,Nakhon Ratchasima
+1074,2026-04-30,C023,Webcam,Electronics,2,1250,Bangkok
+1075,2026-06-20,C013,Headset,Audio,3,1669,Nakhon Ratchasima
+1076,2026-01-20,C050,Webcam,Electronics,3,1375,Rayong
+1077,2026-05-20,C022,Keyboard,Accessories,1,892,Chiang Mai
+1078,2026-05-31,C017,Keyboard,Accessories,1,935,Phuket
+1079,2026-03-24,C028,Router,Networking,1,2409,Chonburi
+1080,2026-02-20,C017,Keyboard,Accessories,4,807,Chonburi
+1081,2026-05-20,C044,External HDD,Storage,2,2929,Khon Kaen
+1082,2026-01-20,C043,USB-C Cable,Accessories,3,180,Rayong
+1083,2026-03-20,C033,Webcam,Electronics,4,1312,Khon Kaen
+1084,2026-03-19,C036,Monitor,Electronics,2,5720,Rayong
+1085,2026-04-10,C044,External HDD,Storage,1,2929,Khon Kaen
+1086,2026-05-23,C054,Keyboard,Accessories,2,892,Chiang Mai
+1087,2026-04-23,C051,Router,Networking,3,2409,Khon Kaen
+1088,2026-04-26,C044,Laptop,Electronics,5,28500,Rayong
+1089,2026-01-24,C019,RAM 16GB,Components,3,2365,Nakhon Ratchasima
+1090,2026-03-04,C044,Webcam,Electronics,2,1250,Chiang Mai
+1091,2026-01-09,C003,Laptop,Electronics,5,27075,Khon Kaen
+1092,2026-04-19,C041,Router,Networking,2,2409,Khon Kaen
+1093,2026-04-15,C016,Monitor,Electronics,1,4940,Nakhon Ratchasima
+1094,2026-04-21,C015,Monitor,Electronics,5,4940,Chonburi
+1095,2026-03-07,C055,Mouse,Accessories,5,450,Nakhon Ratchasima
+1096,2026-05-01,C043,RAM 16GB,Components,3,2739,Chonburi
+1097,2026-05-12,C028,RAM 16GB,Components,5,2490,Rayong
+1098,2026-05-04,C029,Webcam,Electronics,2,1312,Nakhon Ratchasima
+1099,2026-05-16,C032,Printer,Office,2,4095,Khon Kaen
+1100,2026-01-22,C046,Webcam,Electronics,2,1312,Phuket
+1101,2026-03-25,C035,Mouse,Accessories,1,450,Chiang Mai
+1102,2026-04-11,C045,Monitor,Electronics,2,4940,Khon Kaen
+1103,2026-04-17,C022,RAM 16GB,Components,5,2739,Bangkok
+1104,2026-02-24,C054,Headset,Audio,4,1510,Nakhon Ratchasima
+1105,2026-05-30,C025,SSD 1TB,Storage,1,3454,Phuket
+1106,2026-02-12,C056,Keyboard,Accessories,,850,Bangkok
+1107,2026-03-05,C057,Mouse,Accessories,3,450,
+1108,2026-04-08,C058,,Accessories,1,300,Bangkok
+1109,invalid-date,C059,Monitor,Electronics,1,5200,Chiang Mai
+1110,2026-05-11,C060,Laptop,Electronics,1,,Phuket
+1111,2026-06-03,C061,USB-C Cable,Accessories,10,190,Khon Kaen
+1111,2026-06-03,C061,USB-C Cable,Accessories,10,190,Khon Kaen
+1112,2026-06-10,C062,SSD 1TB,Storage,,3290,Bangkok
+1113,2026-01-21,C063,Headset,Audio,2,1590,
+1114,bad-date,C064,Router,Networking,1,2190,Rayong
+1115,2026-02-28,C065,Printer,Office,1,,Chonburi
+1116,2026-03-18,C066,,Storage,2,2790,Bangkok
+1117,2026-04-30,C067,RAM 16GB,Components,4,2490,Nakhon Ratchasima
+1118,2026-05-04,C068,Webcam,Electronics,,1250,Phuket
+1119,2026-06-17,C069,External HDD,Storage,1,2790,
