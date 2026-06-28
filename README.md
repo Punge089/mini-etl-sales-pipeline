@@ -66,7 +66,7 @@ mini-etl-sales-pipeline/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/mini-etl-sales-pipeline.git
+git clone https://github.com/Punge089/mini-etl-sales-pipeline.git
 cd mini-etl-sales-pipeline
 ```
 
@@ -79,7 +79,7 @@ python -m venv venv
 On Windows:
 
 ```bash
-venv\Scripts\activate
+.\venv\Scripts\activate
 ```
 
 On macOS/Linux:
