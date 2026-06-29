@@ -1,6 +1,7 @@
 # Mini ETL Sales Pipeline
 
 A simple project that demonstrates an end-to-end ETL workflow using Python, Pandas, SQL, and SQLite.
+The sample dataset contains 120 raw sales transaction records with intentional data quality issues such as duplicates, missing values, and invalid dates.
 
 ## Project Overview
 
