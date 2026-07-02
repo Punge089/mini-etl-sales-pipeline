@@ -1,0 +1,15 @@
+2026-07-02 16:11:29,725 - INFO - Starting Mini ETL Sales Pipeline...
+2026-07-02 16:11:29,730 - INFO - Loaded raw CSV from data\raw\sales.csv.
+2026-07-02 16:11:29,730 - INFO - Extracted 120 raw rows.
+2026-07-02 16:11:29,745 - INFO - Cleaned 120 raw rows into 115 final rows.
+2026-07-02 16:11:29,746 - INFO - Removed 5 rows and transformed 115 rows.
+2026-07-02 16:11:29,750 - INFO - Saved cleaned CSV to data\processed\cleaned_sales.csv.
+2026-07-02 16:11:29,763 - INFO - Loaded sales table into database\sales_pipeline.db.
+2026-07-02 16:11:29,763 - INFO - Loaded 115 rows into CSV and SQLite.
+2026-07-02 16:11:30,642 - INFO - Generated charts and Markdown reports.
+2026-07-02 16:11:30,642 - INFO - Cleaned data: data\processed\cleaned_sales.csv
+2026-07-02 16:11:30,642 - INFO - Database: database\sales_pipeline.db
+2026-07-02 16:11:30,642 - INFO - Sales report: output\reports\sales_summary.md
+2026-07-02 16:11:30,642 - INFO - Data quality report: output\reports\data_quality_report.md
+2026-07-02 16:11:30,642 - INFO - Log file: output\logs\pipeline.log
+2026-07-02 16:11:30,642 - INFO - Pipeline completed successfully.

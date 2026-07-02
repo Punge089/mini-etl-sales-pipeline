@@ -1,17 +1,42 @@
 # Mini ETL Sales Pipeline
 
-A simple project that demonstrates an end-to-end ETL workflow using Python, Pandas, SQL, and SQLite.
-The sample dataset contains 120 raw sales transaction records with intentional data quality issues such as duplicates, missing values, and invalid dates.
+This is a beginner-friendly Data Engineering portfolio project. It shows a small ETL pipeline that reads messy sales data from a CSV file, cleans it with Python and Pandas, loads it into SQLite, and creates a few simple reports and charts.
+
+I kept the project small on purpose so the main ETL idea is easy to follow.
 
 ## Project Overview
 
-This project simulates a small sales data pipeline:
+The sample dataset contains sales transactions with some common data quality problems:
 
-1. **Extract** raw sales data from a CSV file
-2. **Transform** the dataset by cleaning missing values, removing duplicates, fixing data types, and calculating revenue
-3. **Load** the cleaned data into a local SQLite database
-4. **Query** the database using SQL
-5. **Report** sales insights through Markdown reports and charts
+- duplicate rows
+- missing product, region, quantity, and unit price values
+- invalid dates
+- invalid or missing numeric values
+
+The pipeline handles those issues and records what happened during the run.
+
+## ETL Workflow
+
+1. **Extract**
+   - Read raw sales data from `data/raw/sales.csv`
+
+2. **Transform**
+   - Standardize column names
+   - Remove duplicate rows
+   - Convert order dates, quantities, and prices to the correct data types
+   - Fill simple missing values where it makes sense
+   - Remove rows with invalid dates or prices
+   - Create `revenue` and `order_month` columns
+
+3. **Load**
+   - Save cleaned data to `data/processed/cleaned_sales.csv`
+   - Load cleaned data into `database/sales_pipeline.db`
+
+4. **Report**
+   - Run SQL queries for business metrics
+   - Generate Markdown reports
+   - Generate revenue charts
+   - Save a pipeline log file
 
 ## Project Structure
 
@@ -25,11 +50,14 @@ mini-etl-sales-pipeline/
 ├── database/
 │   └── sales_pipeline.db
 ├── output/
-│   ├── reports/
-│   │   └── sales_summary.md
-│   └── charts/
-│       ├── monthly_revenue.png
-│       └── top_products.png
+│   ├── charts/
+│   │   ├── monthly_revenue.png
+│   │   └── top_products.png
+│   ├── logs/
+│   │   └── pipeline.log
+│   └── reports/
+│       ├── data_quality_report.md
+│       └── sales_summary.md
 ├── src/
 │   ├── extract.py
 │   ├── transform.py
@@ -41,27 +69,9 @@ mini-etl-sales-pipeline/
 └── README.md
 ```
 
-## Features
-
-- Load raw CSV sales data
-- Clean duplicate and invalid records
-- Handle missing values
-- Convert date and numeric columns
-- Calculate revenue
-- Store cleaned data in SQLite
-- Run SQL queries for business metrics
-- Generate charts and Markdown report
-
 ## How to Run
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/Punge089/mini-etl-sales-pipeline.git
-cd mini-etl-sales-pipeline
-```
-
-### 2. Create a virtual environment
+Create and activate a virtual environment:
 
 ```bash
 python -m venv venv
@@ -73,45 +83,62 @@ On Windows:
 .\venv\Scripts\activate
 ```
 
-On macOS/Linux:
+On macOS or Linux:
 
 ```bash
 source venv/bin/activate
 ```
 
-### 3. Install dependencies
+Install the Python packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the pipeline
+Run the ETL pipeline:
 
 ```bash
 python main.py
 ```
 
-## Expected Output
+## Outputs
 
-After running the project, the pipeline will generate:
+After running the project, these files are created or updated:
 
-- `data/processed/cleaned_sales.csv`
-- `database/sales_pipeline.db`
-- `output/reports/sales_summary.md`
-- `output/charts/monthly_revenue.png`
-- `output/charts/top_products.png`
+- `data/processed/cleaned_sales.csv` - cleaned sales dataset
+- `database/sales_pipeline.db` - SQLite database with a `sales` table
+- `output/reports/sales_summary.md` - SQL-based sales summary report
+- `output/reports/data_quality_report.md` - data validation and cleaning summary
+- `output/charts/monthly_revenue.png` - monthly revenue chart
+- `output/charts/top_products.png` - top products chart
+- `output/logs/pipeline.log` - log file for the pipeline run
 
-## Skills Demonstrated
+## Data Quality Checks
 
-- Python programming
-- Data cleaning
-- ETL pipeline design
-- SQL querying
-- Database loading
-- Data reporting
-- Data visualization
-- GitHub project organization
+The transform step tracks:
 
-## Summary
+- how many raw rows were extracted
+- how many duplicate rows were removed
+- how many rows were removed because of invalid dates or numeric values
+- how many missing values were filled
+- how many final rows were loaded
+- how many rows were transformed with new calculated columns
 
-Built a Python ETL pipeline to extract, clean, transform, and load sales data into a local SQL database. Used Pandas and SQL to generate business reports, including monthly revenue and top product performance.
+The results are saved in `output/reports/data_quality_report.md`.
+
+## Skills Practiced
+
+- Reading CSV files with Pandas
+- Cleaning and validating messy data
+- Tracking basic data quality metrics
+- Loading data into SQLite
+- Writing SQL queries for simple analytics
+- Creating charts with Matplotlib
+- Organizing a small Python data project
+- Using logging to make the pipeline easier to debug
+
+## What I Learned
+
+This project helped me understand that an ETL pipeline is not only about moving data from one place to another. The cleaning and validation steps are important because bad dates, missing prices, and duplicates can change the final business results.
+
+I also practiced separating the project into small files, so each part of the pipeline has its own job: extract, transform, load, query, and report.

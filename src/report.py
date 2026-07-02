@@ -95,7 +95,66 @@ def write_markdown_report(
         title = section_name.replace("_", " ").title()
         lines.append(f"## {title}")
         lines.append("")
-        lines.append(metric_df.to_markdown(index=False))
+        lines.append(metric_df.to_markdown(index=False, floatfmt=",.2f"))
         lines.append("")
+
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def write_data_quality_report(quality_stats: dict, output_path: str | Path) -> None:
+    """Write a simple Markdown report about the cleaning checks."""
+    path = Path(output_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    missing_text_values = quality_stats.get("missing_text_values_filled", {})
+    new_columns = ", ".join(quality_stats.get("new_columns_created", []))
+
+    lines = [
+        "# Data Quality Report",
+        "",
+        "This report shows the basic checks from the transform step.",
+        "",
+        "## Row Counts",
+        "",
+        "| Metric | Count |",
+        "| --- | ---: |",
+        f"| Raw rows extracted | {quality_stats.get('raw_rows', 0)} |",
+        f"| Duplicate rows removed | {quality_stats.get('duplicate_rows_removed', 0)} |",
+        f"| Invalid rows removed after deduplication | {quality_stats.get('invalid_rows_removed_after_deduplication', 0)} |",
+        f"| Total rows removed | {quality_stats.get('rows_removed_total', 0)} |",
+        f"| Final rows loaded | {quality_stats.get('final_rows_loaded', 0)} |",
+        f"| Rows transformed | {quality_stats.get('rows_transformed', 0)} |",
+        "",
+        "## Issues Found",
+        "",
+        "| Check | Count | Action |",
+        "| --- | ---: | --- |",
+        f"| Missing quantity values | {quality_stats.get('missing_quantity_filled', 0)} | Filled with 1 |",
+        f"| Invalid or missing dates | {quality_stats.get('invalid_or_missing_dates_removed', 0)} | Removed rows |",
+        f"| Invalid quantity values | {quality_stats.get('invalid_quantity_removed', 0)} | Removed rows |",
+        f"| Non-positive quantity values | {quality_stats.get('non_positive_quantity_removed', 0)} | Removed rows |",
+        f"| Missing or invalid unit prices | {quality_stats.get('missing_or_invalid_unit_price_removed', 0)} | Removed rows |",
+        f"| Non-positive unit prices | {quality_stats.get('non_positive_unit_price_removed', 0)} | Removed rows |",
+        "",
+        "## Missing Text Values Filled",
+        "",
+        "| Column | Filled Values |",
+        "| --- | ---: |",
+    ]
+
+    for column, count in missing_text_values.items():
+        lines.append(f"| {column} | {count} |")
+
+    lines.extend(
+        [
+            "",
+            "## Transformations Added",
+            "",
+            f"- New columns created: {new_columns}",
+            "- Revenue was calculated as quantity multiplied by unit price.",
+            "- Order month was created from the cleaned order date.",
+            "",
+        ]
+    )
 
     path.write_text("\n".join(lines), encoding="utf-8")

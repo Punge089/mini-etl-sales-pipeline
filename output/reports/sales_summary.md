@@ -6,44 +6,44 @@ This report was generated from cleaned sales data loaded into a SQLite database.
 
 |   total_revenue |
 |----------------:|
-|     1.01049e+06 |
+|    1,010,488.00 |
 
 ## Monthly Revenue
 
 | order_month   |   monthly_revenue |
 |:--------------|------------------:|
-| 2026-01       |            309245 |
-| 2026-02       |             66344 |
-| 2026-03       |            154756 |
-| 2026-04       |            289884 |
-| 2026-05       |            143443 |
-| 2026-06       |             46816 |
+| 2026-01       |        309,245.00 |
+| 2026-02       |         66,344.00 |
+| 2026-03       |        154,756.00 |
+| 2026-04       |        289,884.00 |
+| 2026-05       |        143,443.00 |
+| 2026-06       |         46,816.00 |
 
 ## Top Products
 
 | product      |   total_revenue |
 |:-------------|----------------:|
-| Laptop       |          471675 |
-| Printer      |          127725 |
-| Monitor      |          115440 |
-| RAM 16GB     |           64488 |
-| External HDD |           54121 |
+| Laptop       |      471,675.00 |
+| Printer      |      127,725.00 |
+| Monitor      |      115,440.00 |
+| RAM 16GB     |       64,488.00 |
+| External HDD |       54,121.00 |
 
 ## Region Revenue
 
 | region            |   total_revenue |
 |:------------------|----------------:|
-| Rayong            |          239616 |
-| Khon Kaen         |          210436 |
-| Bangkok           |          204772 |
-| Chonburi          |          137717 |
-| Nakhon Ratchasima |           83604 |
-| Phuket            |           71428 |
-| Chiang Mai        |           55595 |
-| Unknown           |            7320 |
+| Rayong            |      239,616.00 |
+| Khon Kaen         |      210,436.00 |
+| Bangkok           |      204,772.00 |
+| Chonburi          |      137,717.00 |
+| Nakhon Ratchasima |       83,604.00 |
+| Phuket            |       71,428.00 |
+| Chiang Mai        |       55,595.00 |
+| Unknown           |        7,320.00 |
 
 ## Average Order Value
 
 |   average_order_value |
 |----------------------:|
-|               8786.85 |
+|              8,786.85 |

@@ -1,7 +1,11 @@
 """Extract module for loading raw sales data."""
 
+import logging
 from pathlib import Path
 import pandas as pd
+
+
+logger = logging.getLogger(__name__)
 
 
 def load_sales_data(file_path: str | Path) -> pd.DataFrame:
@@ -18,4 +22,6 @@ def load_sales_data(file_path: str | Path) -> pd.DataFrame:
     if not path.exists():
         raise FileNotFoundError(f"CSV file not found: {path}")
 
-    return pd.read_csv(path)
+    df = pd.read_csv(path)
+    logger.info("Loaded raw CSV from %s.", path)
+    return df
