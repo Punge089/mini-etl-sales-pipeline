@@ -1,8 +1,6 @@
 # Mini ETL Sales Pipeline
 
-This is a beginner-friendly Data Engineering portfolio project. It shows a small ETL pipeline that reads messy sales data from a CSV file, cleans it with Python and Pandas, loads it into SQLite, and creates a few simple reports and charts.
-
-I kept the project small on purpose so the main ETL idea is easy to follow.
+It shows a small ETL pipeline that reads messy sales data from a CSV file, cleans it with Python and Pandas, loads it into SQLite, and creates a few simple reports and charts.
 
 ## Project Overview
 
